@@ -171,7 +171,7 @@ export default function App() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        let response = await fetch("http://localhost:8080/products");
+        let response = await fetch("https://vercel-deploy-lplk.onrender.com/api/products");
         if (!response.ok) {
           response = await fetch("https://dummyjson.com/products");
         }
